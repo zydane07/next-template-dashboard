@@ -22,7 +22,7 @@ export default function Navbar({ theme, setTheme, toggleSidebar }: Props) {
           <Button isIconOnly variant="bordered" onClick={toggleSidebar}>
             <RxHamburgerMenu className="text-xl" />
           </Button>
-          <h2 className="text-lg font-light capitalize">Inventory Infomedia</h2>
+          <h2 className="text-lg font-light capitalize">Inventory Dashboard</h2>
         </div>
         <div className="flex items-center gap-4">
           <ThemeMode theme={theme} setTheme={setTheme} />

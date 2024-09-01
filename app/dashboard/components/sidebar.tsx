@@ -1,6 +1,4 @@
 import React from "react";
-import LogoDefault from "@/public/infomedia_logo.png";
-import LogoDark from "@/public/infomedia_putih.png";
 import { Image } from "@nextui-org/image";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
@@ -17,7 +15,7 @@ interface Menu {
 }
 
 export default function Sidebar({ theme }: Props) {
-  const logoSrc = theme === "dark" ? LogoDark.src : LogoDefault.src;
+  // const logoSrc = theme === "dark" ? LogoDark.src : LogoDefault.src;
   const pathName = usePathname();
 
   const menuLists: Menu[] = [
@@ -51,7 +49,7 @@ export default function Sidebar({ theme }: Props) {
   return (
     <div className="min-h-screen border-r-2 bg-slate-200 dark:border-black-200 dark:bg-black-300">
       <div className="mx-4 flex h-10 items-center justify-center border-b-2 border-black-100 dark:border-black-200 sm:h-20">
-        <Image src={logoSrc} alt="logo" className="w-28 sm:w-40" />
+        <Image src="#" alt="Your logo here..." className="w-28 sm:w-40" />
       </div>
       <div className="mx-8 my-4">
         <ul className="mb-4 flex flex-col gap-1">

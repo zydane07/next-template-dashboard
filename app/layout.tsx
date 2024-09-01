@@ -7,8 +7,8 @@ import { cn } from "@/helper/cn";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ivenna Dashboard",
-  description: "Triple A Inventory (Infomedia)",
+  title: "Dashboard",
+  description: "Your dasboard",
 };
 
 export default function RootLayout({

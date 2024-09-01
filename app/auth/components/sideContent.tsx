@@ -1,13 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import background from "@/public/background.jpg";
-import logoDefault from "@/public/infomedia_putih.png";
 import welcomingHeader from "./greeting";
 type Props = {};
 
 export default function SideContent({}: Props) {
   const backgroundSrc = background.src;
-  const logoSrc = logoDefault.src;
 
   return (
     <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full">
@@ -24,8 +22,8 @@ export default function SideContent({}: Props) {
         <div className="block text-white">
           <Image
             className="h-auto w-36"
-            alt="Logo"
-            src={logoSrc}
+            alt="Your logo here..."
+            src="#"
             width={150}
             height={150}
             priority
@@ -37,7 +35,7 @@ export default function SideContent({}: Props) {
         </h2>
 
         <p className="mt-4 leading-relaxed text-white/90">
-          <span className="font-bold">Ivenna (Inventory Infomedia)</span>{" "}
+          <span className="font-bold">Your dashboard name</span>{" "}
           {welcomingHeader[1]}
         </p>
       </div>
